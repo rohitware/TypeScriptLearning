@@ -1,9 +1,24 @@
 var mathMarks = Number(prompt('Enter Maths Marks'));
-console.log("Maths Marks  = ".concat(mathMarks));
+if (mathMarks < 0 || mathMarks > 100) {
+    alert("Please enter valid Marks");
+}
+else {
+    console.log("Maths Marks  = ".concat(mathMarks));
+}
 var phyMarks = Number(prompt('Enter Physics Marks'));
-console.log("Physics Marks = ".concat(phyMarks));
+if (mathMarks < 0 || mathMarks > 100) {
+    alert("Please enter valid Marks");
+}
+else {
+    console.log("Physics Marks = ".concat(phyMarks));
+}
 var cheMarks = Number(prompt('Enter Chemistry Marks'));
-console.log("Chemistry Marks = ".concat(cheMarks));
+if (mathMarks < 0 || mathMarks > 100) {
+    alert("Please enter valid Marks");
+}
+else {
+    console.log("Chemistry Marks = ".concat(cheMarks));
+}
 var totalMarks = mathMarks + phyMarks + cheMarks;
 var totalTofix = totalMarks.toFixed(2);
 console.log("Total Marks:", totalTofix);
